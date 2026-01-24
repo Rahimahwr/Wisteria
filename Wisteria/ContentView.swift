@@ -6,56 +6,62 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var showLoginView: Bool = false
+    @State private var navigateToHome: Bool = false
+    @State private var navigateToProfileSetup: Bool = false
+    @State private var navigateToForgotPasswordView: Bool = false
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+        NavigationStack {
+            ZStack {
+                SplashBackground()
+
+                Color.clear.onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                        withAnimation(.easeIn(duration: 0.25)) {
+                            showLoginView = true
+                        }
                     }
                 }
             }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+            .sheet(isPresented: $showLoginView) {
+                LoginView(
+                    navigateToHome: $navigateToHome,
+                    navigateToProfileSetup: $navigateToProfileSetup,
+                    navigateToForgotPassword: $navigateToForgotPasswordView
+                )
+                .presentationDetents([.medium])
+                .presentationCornerRadius(36)
+                .presentationDragIndicator(.hidden)
             }
+            // Navigation destinations
+            .navigationDestination(isPresented: $navigateToHome) {
+                HomeView()
+            }
+            .navigationDestination(isPresented: $navigateToProfileSetup) {
+                ProfileSetup()
+            }
+            .navigationDestination(isPresented: $navigateToForgotPasswordView) {
+                ForgotPasswordView()
+            }
+
+            // FIX: Automatically dismiss login sheet when navigating
+            .onChange(of: navigateToHome) { _, _ in
+                showLoginView = false
+            }
+            .onChange(of: navigateToProfileSetup) { _, _ in
+                showLoginView = false
+            }
+            .onChange(of: navigateToForgotPasswordView) { _, _ in
+                showLoginView = false
+            }
+
         }
     }
 }
 
-#Preview {
+#Preview{
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }

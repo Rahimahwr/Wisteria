@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum ChatMode: String, CaseIterable, Identifiable {
+    case recommendation = "Product Recommendations"
+    case ingredientAnalysis = "Ingredient Analysis"
+
+    var id: String { rawValue }
+}

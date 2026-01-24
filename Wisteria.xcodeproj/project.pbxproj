@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1AF8EE582F1A76F100D1DBBB /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF8EE572F1A76F100D1DBBB /* OpenAI */; };
+		1AF8EE742F1A86FD00D1DBBB /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF8EE732F1A86FD00D1DBBB /* OpenAISwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1A7BFCC62EE2FD3300BEFDCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF8EE742F1A86FD00D1DBBB /* OpenAISwift in Frameworks */,
+				1AF8EE582F1A76F100D1DBBB /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = Wisteria;
 			packageProductDependencies = (
+				1AF8EE572F1A76F100D1DBBB /* OpenAI */,
+				1AF8EE732F1A86FD00D1DBBB /* OpenAISwift */,
 			);
 			productName = Wisteria;
 			productReference = 1A7BFCB62EE2FD3200BEFDCF /* Wisteria.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 1A7BFCAD2EE2FD3200BEFDCF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1AF8EE562F1A76F100D1DBBB /* XCRemoteSwiftPackageReference "OpenAI" */,
+				1AF8EE722F1A86FD00D1DBBB /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1A7BFCB72EE2FD3200BEFDCF /* Products */;
 			projectDirPath = "";
@@ -413,6 +426,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Rahimah.Wisteria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -445,6 +462,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Rahimah.Wisteria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -467,6 +488,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Rahimah.WisteriaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -489,6 +514,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Rahimah.WisteriaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -509,6 +538,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Rahimah.WisteriaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -529,6 +562,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Rahimah.WisteriaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -578,6 +615,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AF8EE562F1A76F100D1DBBB /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.7;
+			};
+		};
+		1AF8EE722F1A86FD00D1DBBB /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift?";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AF8EE572F1A76F100D1DBBB /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AF8EE562F1A76F100D1DBBB /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		1AF8EE732F1A86FD00D1DBBB /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AF8EE722F1A86FD00D1DBBB /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A7BFCAE2EE2FD3200BEFDCF /* Project object */;
 }
