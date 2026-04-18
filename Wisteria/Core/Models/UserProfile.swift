@@ -1,7 +1,15 @@
+//
+//  UserProfile.swift
+//  Wisteria
+//
+//  Created by Rahimah Warsame on 27/03/2026.
+//
+
+
 import Foundation
 import FirebaseFirestore
 
-struct UserProfile: Codable {
+struct UserProfile: Codable , Sendable{
     var uid: String
     var fullName: String
     var email: String
@@ -15,7 +23,7 @@ struct UserProfile: Codable {
     // Makeup Preferences
     var coverage: String?
     var finish: String?
-    var preferredProducts: [String] = []
+    var preferredProducts: [String]?
     
     var setupComplete: Bool = false
 }

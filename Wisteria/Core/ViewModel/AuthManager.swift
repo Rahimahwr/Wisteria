@@ -1,5 +1,14 @@
+//
+//  AuthManager.swift
+//  Wisteria
+//
+//  Created by Rahimah Warsame on 26/03/2026.
+//
+
+
 import Foundation
 import FirebaseAuth
+internal import Combine
 
 class AuthManager: ObservableObject {
     @Published var errorMessage: String?
