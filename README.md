@@ -22,8 +22,7 @@ Since the GitHub repository is currently locked due to the synchronisation error
 
 - **Download the Project:**
 
-    Navigate to the following OneDrive link and download the .zip file containing the complete project folder:
-    [Insert OneDrive Link Here]
+    Navigate to the following OneDrive link and download the .zip file containing the complete project folder
 
 - **Extract the Files:**
 Once downloaded, double-click the .zip file in your Downloads folder to extract the Wisteria project directory.
