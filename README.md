@@ -22,10 +22,7 @@ Since the GitHub repository is currently locked due to the synchronisation error
 
 - **Download the Project:**
 
-    Navigate to the following OneDrive link and download the .zip file containing the complete project folder
-
-- **Extract the Files:**
-Once downloaded, double-click the .zip file in your Downloads folder to extract the Wisteria project directory.
+    Navigate to the following OneDrive link and download the w1994299-Software containing the complete project folder
 
 
 **Running the Application**
@@ -42,9 +39,9 @@ Once downloaded, double-click the .zip file in your Downloads folder to extract 
 
 To bypass the account creation process and immediately access the populated test environment, please use the following test credentials when the app launches:
 
-**- Email: wisteriademo01@gmail.com**
+**- Email: testuser@gmail.com**
 
-**- Password: Demo1234**
+**- Password: Test1234**
 
 **How to Use Wisteria**
 
