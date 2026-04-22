@@ -5,7 +5,9 @@ IMPORTANT NOTICE REGARDING REPOSITORY STATUS
 
 The local repository is out of date. Due to a synchronisation error that prevents local commits and pushes, the codebase in this GitHub repository is currently out of sync and cannot be updated.
 
-To evaluate the working prototype, **please ignore the code in this repository and strictly follow the OneDrive download instructions** provided below.
+To evaluate the working prototype, **please ignore the code in this repository and strictly follow the OneDrive download instructions** provided below:
+
+**Onedrive link:**  https://universityofwestminster-my.sharepoint.com/:f:/g/personal/w1994299_westminster_ac_uk/IgAT6nyJk3xmSpMsVNF2xJJ1AUb1GFBWj1hbNYJ7kU65Umc?e=kYmTXf
 
 **Prerequisites**
 
